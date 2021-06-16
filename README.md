@@ -6,6 +6,48 @@
 
 ![Images/extract.png](Images/extract.png)
 
+```python
+# Path to chromedriver
+#get_ipython().system('which chromedriver')
+
+# Set the executable path and initialize the chrome browser in spliter
+executable_path = {'executable_path': 'C:\Program Files (x86)\chromedriver.exe'}
+browser = Browser('chrome', **executable_path)
+```
+
+```python
+
+# ### Visit the Bexar Count vaccine Site
+# Visit the Bexar county vaccine  site
+url = 'https://data.democratandchronicle.com/covid-19-vaccine-tracker/texas/bexar-county/48029/'
+browser.visit(url)
+```
+
+```python
+# Retrive page with the request module
+response = requests.get(url)
+
+# Retrive page with the request module
+response = requests.get(url)
+
+# reults are returned as an iterable list
+results = soup.find('td', class_="tbvar covr")
+
+# Print all headlines
+tds = soup.find_all('td')
+# A blank list to hold the headlines
+headlines = []
+# Loop over td elements
+for td in tds:
+    # If td element has an anchor...
+    if (td.a):
+        # And the anchor has non-blank text...
+        if (td.a.text):
+            # Append the td to the list
+            headlines.append(td)
+```
+
+
 ## Transform
 
 #### Our first steps in cleaning up the datasets involved updating the most recent vaccine information from all Texas counties and transfering it from HTML to Dataframe Pandas. 
