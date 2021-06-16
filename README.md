@@ -55,6 +55,38 @@ for td in tds:
 
 ![Images/transform.png](Images/transform.png)
 
+```python
+# # Use Pandas to scrape data
+tables = pd.read_html('https://data.democratandchronicle.com/covid-19-vaccine-tracker/texas/bexar-county/48029/')
+
+# Second table
+df = tables[2]
+df
+```
+
+```python
+Bexar_data = df.loc[df["Area"]=="Bexar County"]
+Bexar_data
+```
+
+```python
+My_data = Bexar_data["People Fully Vaccinated"]
+str(My_data)
+len("My_data")
+```
+
+```python
+number_vaccinated = My_data[0:7]
+number_vaccinated
+```
+
+```pyton
+df.to_csv("Vaccine_Tracker.csv")
+
+```
+
+
+
 ## Load
 
 #### The last step was to transfer our final output into a Database. We created a database and respective tables to match the columns from the final Panda’s Data Frame using MYSQL and then connected to the database using SQLAlchemy and loaded the result. utilized PgAdmin
