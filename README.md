@@ -4,14 +4,14 @@
 
 #### We used 2 datasets from the website: https://data.democratandchronicle.com/covid-19-vaccine-tracker/texas/bexar-county/48029/ and The Census Bureau CSV updated. All of our data was based on Bexar county. 
 
-![Images/extract.png](Images/extract.PNG)
+![Images/extract.png](Images/extract.png)
 
 ## Transform
 
 #### Our first steps in cleaning up the datasets involved updating the most recent vaccine information from all Texas counties and transfering it from HTML to Dataframe Pandas. 
 #### We also pulled updated Census Bureau CSV to incorporate updated positive case count numbers in Bexar county
 
-![Images/transform.png](Images/transform.PNG)
+![Images/transform.png](Images/transform.png)
 
 ## Load
 
