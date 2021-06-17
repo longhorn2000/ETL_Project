@@ -106,7 +106,7 @@ Select *
 From vaccine_tracker;
 ```
 
-![Images/2.png](Images/2.png)
+![Images/2.png](Images/2.PNG)
 
 ```SQL
 Drop Table Bexar_updated_Covid_data;
@@ -129,7 +129,7 @@ Select *
 From Bexar_updated_Covid_data;
 ```
 
-![Images/1.png](Images/1.png)
+![Images/1.png](Images/1.PNG)
 
 ## Limitations
 
