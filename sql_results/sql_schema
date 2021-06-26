@@ -1,0 +1,31 @@
+DROP TABLE updated_covid
+DROP TABLE vaccine_tracker
+
+
+CREATE TABLE  updated_Covid(
+	OBJECTID NUMERIC,
+	ZIP_CODE NUMERIC, 
+	populationtotals_totpop_cy NUMERIC ,
+	Positive NUMERIC,
+	CasesP100000 NUMERIC, 
+	ZipInt NUMERIC, 
+	ActiveCases NUMERIC,
+	ActiveCaseRate NUMERIC,
+	SHAPE_Length NUMERIC,
+	SHAPE_Area NUMERIC
+);
+
+CREATE TABLE vaccine_tracker(
+	Area VARCHAR,  
+	Population NUMERIC, 
+	Doses_Administered NUMERIC , 
+	People_vaccinate_with_one_dose NUMERIC,
+	Percent_of_population NUMERIC,  
+	Fully_vaccinated NUMERIC
+);
+
+SELECT *
+FROM updated_Covid
+
+SELECT *
+FROM vaccine_tracker
