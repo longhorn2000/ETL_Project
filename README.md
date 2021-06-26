@@ -12,6 +12,8 @@ Given a previously made data set analyzing Covid-19 positivity rates in Bexar Co
 
 ![5](Images/5.png)
 
+![2](Images/2.png)
+
 # ETL Project: Bexar County Covid-19 by the numbers
 
 ## Extract
